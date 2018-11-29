@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1860C10C21AF7EE30048BC35 /* thread_checker_impl.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1860C10921AF7EE30048BC35 /* thread_checker_impl.cc */; };
 		1ABA95C91D10E00D001DB1AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA95C81D10E00D001DB1AE /* main.m */; };
 		1ABA95CC1D10E00D001DB1AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA95CB1D10E00D001DB1AE /* AppDelegate.m */; };
 		1ABA95D21D10E00D001DB1AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ABA95D01D10E00D001DB1AE /* Main.storyboard */; };
@@ -76,6 +77,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1860C10921AF7EE30048BC35 /* thread_checker_impl.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = thread_checker_impl.cc; sourceTree = "<group>"; };
+		1860C10A21AF7EE30048BC35 /* thread_checker_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread_checker_impl.h; sourceTree = "<group>"; };
+		1860C10B21AF7EE30048BC35 /* thread_checker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread_checker.h; sourceTree = "<group>"; };
 		1ABA95C41D10E00D001DB1AE /* JitterBufferTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JitterBufferTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ABA95C81D10E00D001DB1AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1ABA95CA1D10E00D001DB1AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -290,6 +294,9 @@
 		1ABA97E21D1129AC001DB1AE /* base */ = {
 			isa = PBXGroup;
 			children = (
+				1860C10921AF7EE30048BC35 /* thread_checker_impl.cc */,
+				1860C10A21AF7EE30048BC35 /* thread_checker_impl.h */,
+				1860C10B21AF7EE30048BC35 /* thread_checker.h */,
 				1ABA97E31D1129AC001DB1AE /* atomicops.h */,
 				1ABA97E41D1129AC001DB1AE /* basictypes.h */,
 				1ABA97E51D1129AC001DB1AE /* callback.h */,
@@ -549,6 +556,7 @@
 				TargetAttributes = {
 					1ABA95C31D10E00D001DB1AE = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = VKLW7JC737;
 					};
 					1ABA95E11D10E04D001DB1AE = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -617,6 +625,7 @@
 				1ABA986D1D1129AC001DB1AE /* metrics_default.cc in Sources */,
 				1ABA98551D1129AC001DB1AE /* common.cc in Sources */,
 				1ABA98631D1129AC001DB1AE /* receiver.cc in Sources */,
+				1860C10C21AF7EE30048BC35 /* thread_checker_impl.cc in Sources */,
 				1ABA98731D112B2F001DB1AE /* logging.cc in Sources */,
 				1ABA98601D1129AC001DB1AE /* jitter_buffer.cc in Sources */,
 				1ABA98891D11326B001DB1AE /* thread_posix.cc in Sources */,
@@ -758,6 +767,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VKLW7JC737;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/VideoReceiver\"";
 				INFOPLIST_FILE = JitterBufferTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -771,6 +782,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VKLW7JC737;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/VideoReceiver\"";
 				INFOPLIST_FILE = JitterBufferTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
